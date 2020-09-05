@@ -1,4 +1,7 @@
-﻿# Examples
+﻿# build
+build/*
+
+# Examples
 /examples/demo/samples/out.mp4
 
 # ffmpeg download subdirectories

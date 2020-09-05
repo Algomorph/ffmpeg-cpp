@@ -6,11 +6,13 @@ A clean C++ wrapper around the ffmpeg libraries. Makes the most commonly used fu
 ## Windows
 
 1. Clone the repository
-2. Download a build of FFmpeg from https://ffmpeg.zeranoe.com/builds/. The project was last tested with **4.1**. You will need both the dev version (for .h and .lib files) and the shared version (for .dll). Extract all of them into the ffmpeg directory in the repository. there are more instructions on how to extract them properly in the ffmpeg/readme.txt file.
-3. Open the Visual Studio solution in the source directory.
-4. Build everything.
+2. Update submodule for vcpkg
+3. Run `build-dependencies.bat` to build ffmpeg in your machine
+4. Run `build-libraries.bat` to build this library
+	* This will create a `build` directory. The visual studio project files will be inside the folder.
+	* Add `--build-examples` option while executing `build-libraries.bat` to build examples and demo, which will be inside `build\examples` folder 
 
-This will build a .lib file that you can use in your own C++ projects. It will also generate an include-folder in the repo root that you can add to your include filders in your own project.
+This will build a `.lib` file that you can use in your own C++ projects. It will also generate an include-folder in the repo root that you can add to your include folders in your own project.
 
 ## Linux
 
